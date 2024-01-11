@@ -1,0 +1,24 @@
+http:
+  protocol: http
+  host: localhost
+  port: 8080
+  write_timeout: 10s
+  read_timeout: 10s
+  idle_timeout: 10s
+  sert_file: ./certs/server.crt
+  sert_key: ./certs/server.key
+postgres:
+  host: localhost
+  port: 5432
+  user: postgres
+  password: postgres
+  dbname: postgres
+  sslmode: disable
+  settings:
+    max_open_conns: 40
+    conn_max_life_time: 60
+    max_idle_conns: 20
+    max_idle_life_time: 30
+redis:
+  host: localhost
+  port: 6379
